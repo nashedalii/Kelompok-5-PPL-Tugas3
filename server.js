@@ -112,7 +112,7 @@ app.put('/api/drivers/:id', (req, res) => {
   
   if (driverIndex === -1) {
     return res.status(404).json({
-      message: "Driver tidak ada"
+      message: "Driver tidak ditemukan"
     });
   }
   
