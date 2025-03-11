@@ -79,7 +79,7 @@ app.post('/api/drivers', (req, res) => {
   // Validasi data yang masuk
   if (!name || !team || !country) {
     return res.status(400).json({
-      message: "Data driver tidak lengkap. Wajib memiliki name, team, dan country"
+      message: "Data driver belum lengkap. Wajib memiliki name, team, dan country"
     });
   }
   
